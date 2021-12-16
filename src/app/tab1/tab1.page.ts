@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  public date = new Date();
+  public isPopover = false;
+
   constructor() {}
+
+  openPopover() {
+    if (this.isPopover) {
+      this.isPopover = false;
+    } else {
+      this.isPopover = true;
+    }
+  }
 
 }
